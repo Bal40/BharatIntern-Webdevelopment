@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Converter Celsius to Fahrenheit" />
+    <meta name="keywords" content="converter, calculator, celsius, fahrenheit" />
+    <meta name="author" content="Piotr Maliga" />
+    <title>Temperature Converter</title>
+
+    <link href="style.css" rel="stylesheet">
+
+    <link rel="preconcert" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+</head>
+
+<body background="temp.jpg">
+
+    <div class="container">
+        <h1 class="heading"> Temperature Converter </h1>
+        <div class="temp-container">
+            <label for="Celcius">Celcius</label>
+            <input onchange="computeTemp(event)" type="number" name="Celcius" id="Celcius" class="Celcius"
+                placeholder="Enter Temperature in Celcius" />
+        </div>
+        <div class="temp-container">
+            <label for="fahre">Fahrenheit</label>
+            <input onchange="computeTemp(event)" type="number" name="Fahrenheit" id="Fahrenheit" class="Fahrenheit"
+                placeholder="Enter Temperature in Fahrenheit" />
+        </div>
+        <div class="temp-container">
+            <label for="Kelvin">Kelvin</label>
+            <input onchange="computeTemp(event)" type="number" name="Kelvin" id="Kelvin" class="Kelvin"
+                placeholder="Enter Temperature in Kelvin" />
+        </div>
+    </div>
+
+    <div id="buttons">
+        <button class="convertButton">Convert</button>
+        <button class="resetButton">Reset</button>
+    </div>
+
+    <script src="./script.js"></script>
+
+</body>
+
+</html>
